@@ -9,6 +9,10 @@
 
 #User Seeds
 
+User.destroy_all
+Bottle.destroy_all
+Pour.destroy_all
+
 nick = User.create(first_name: "Nick", last_name: "Moore", email: "nick@yahoo.com", password: "password")
 
 chris = User.create(first_name: "Chris", last_name: "Moore", email: "chris@yahoo.com", password: "password")
@@ -30,29 +34,31 @@ bottle_4 = Bottle.create(bottle_name: "Chris's Scotch Bottle", bottle_type: "Sco
 
 #Pour Seeds
 
-pour_1 = Pour.create(pour_name: "Angel's Envy Pour", pour_img_url: "pour_example.jpg", pour_volume: 25, pour_price_per_bottle: 52.99, pour_bottle_volume: 750, bottle: bottle_1)
+pour_1 = Pour.create(pour_name: "Angel's Envy", pour_img_url: "pour_example.jpg", pour_volume: 25, pour_price_per_bottle: 52.99, pour_bottle_volume: 750, bottle: bottle_1)
 
-pour_2 = Pour.create(pour_name: "Bulleit Pour", pour_img_url: "pour_example.jpg", pour_volume: 150, pour_price_per_bottle: 33.98, pour_bottle_volume: 750, bottle: bottle_1)
+pour_2 = Pour.create(pour_name: "Bulleit", pour_img_url: "pour_example.jpg", pour_volume: 150, pour_price_per_bottle: 33.98, pour_bottle_volume: 750, bottle: bottle_1)
 
-pour_3 = Pour.create(pour_name: "Maker's Mark Pour", pour_img_url: "pour_example.jpg", pour_volume: 300, pour_price_per_bottle: 27.99, pour_bottle_volume: 750, bottle: bottle_1)
+pour_3 = Pour.create(pour_name: "Maker's Mark", pour_img_url: "pour_example.jpg", pour_volume: 300, pour_price_per_bottle: 27.99, pour_bottle_volume: 750, bottle: bottle_1)
 
-pour_4 = Pour.create(pour_name: "Blanton's Pour", pour_img_url: "pour_example.jpg", pour_volume: 40, pour_price_per_bottle: 72.99, pour_bottle_volume: 750, bottle: bottle_1)
+pour_4 = Pour.create(pour_name: "Blanton's", pour_img_url: "pour_example.jpg", pour_volume: 40, pour_price_per_bottle: 72.99, pour_bottle_volume: 750, bottle: bottle_1)
 
 pour_5 = Pour.create(pour_name: "Tasting During Card Night", pour_img_url: "pour_example.jpg", pour_volume: -50, pour_price_per_bottle: nil, pour_bottle_volume: nil, bottle: bottle_1)
 
 
 
-pour_6 = Pour.create(pour_name: "Seagram's Extra Dry Pour", pour_img_url: "pour_example.jpg", pour_volume: 500, pour_price_per_bottle: 10.99, pour_bottle_volume: 750, bottle: bottle_2)
+pour_6 = Pour.create(pour_name: "Seagram's Extra Dry", pour_img_url: "pour_example.jpg", pour_volume: 500, pour_price_per_bottle: 10.99, pour_bottle_volume: 750, bottle: bottle_2)
 
-pour_7 = Pour.create(pour_name: "Hendrick's Pour", pour_img_url: "pour_example.jpg", pour_volume: 150, pour_price_per_bottle: 34.99, pour_bottle_volume: 750, bottle: bottle_2)
+pour_7 = Pour.create(pour_name: "Hendrick's", pour_img_url: "pour_example.jpg", pour_volume: 150, pour_price_per_bottle: 34.99, pour_bottle_volume: 750, bottle: bottle_2)
 
-pour_8 = Pour.create(pour_name: "The Botanist Pour", pour_img_url: "pour_example.jpg", pour_volume: 40, pour_price_per_bottle: 36.00, pour_bottle_volume: 750, bottle: bottle_2)
+pour_8 = Pour.create(pour_name: "The Botanist", pour_img_url: "pour_example.jpg", pour_volume: 40, pour_price_per_bottle: 36.00, pour_bottle_volume: 750, bottle: bottle_2)
 
 pour_9 = Pour.create(pour_name: "Ugly Dog", pour_img_url: "pour_example.jpg", pour_volume: 400, pour_price_per_bottle: 16.00, pour_bottle_volume: 750, bottle: bottle_3)
 
 
-pour_10 = Pour.create(pour_name: "Laphroaig Pour", pour_img_url: "pour_example.jpg", pour_volume: 200, pour_price_per_bottle: 72.00, pour_bottle_volume: 750, bottle: bottle_4)
+pour_10 = Pour.create(pour_name: "Laphroaig", pour_img_url: "pour_example.jpg", pour_volume: 200, pour_price_per_bottle: 72.00, pour_bottle_volume: 750, bottle: bottle_4)
 
-pour_11 = Pour.create(pour_name: "Johnny Walker Blue Pour", pour_img_url: "pour_example.jpg", pour_volume: 10, pour_price_per_bottle: 165.00, pour_bottle_volume: 750, bottle: bottle_4)
+pour_11 = Pour.create(pour_name: "Johnny Walker Blue", pour_img_url: "pour_example.jpg", pour_volume: 10, pour_price_per_bottle: 165.00, pour_bottle_volume: 750, bottle: bottle_4)
 
-pour_12 = Pour.create(pour_name: "White Walker Pour", pour_img_url: "pour_example.jpg", pour_volume: 400, pour_price_per_bottle: 29.00, pour_bottle_volume: 750, bottle: bottle_4)
+pour_12 = Pour.create(pour_name: "White Walker", pour_img_url: "pour_example.jpg", pour_volume: 400, pour_price_per_bottle: 29.00, pour_bottle_volume: 750, bottle: bottle_4)
+
+pour_13 = Pour.create(pour_name: "Angel's Envy", pour_img_url: "pour_example.jpg", pour_volume: 15, pour_price_per_bottle: 100.99, pour_bottle_volume: 750, bottle: bottle_1)

@@ -6,7 +6,7 @@ class CreatePours < ActiveRecord::Migration[6.0]
       t.integer :pour_volume
       t.integer :pour_bottle_volume
       t.integer :bottle_id
-      t.decimal :pour_price_per_bottle
+      t.float :pour_price_per_bottle
       t.timestamps
     end
   end
