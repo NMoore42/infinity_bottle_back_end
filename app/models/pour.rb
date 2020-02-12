@@ -6,4 +6,5 @@ class Pour < ApplicationRecord
     (pour_price_per_bottle / pour_bottle_volume) * pour_volume
   end
 
+
 end

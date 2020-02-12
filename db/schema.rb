@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2020_02_10_172307) do
     t.integer "pour_volume"
     t.integer "pour_bottle_volume"
     t.integer "bottle_id"
-    t.decimal "pour_price_per_bottle"
+    t.float "pour_price_per_bottle"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_02_10_172307) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
